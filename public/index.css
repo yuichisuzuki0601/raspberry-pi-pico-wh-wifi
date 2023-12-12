@@ -1,0 +1,32 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 30px;
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.yellow {
+    background: orange;
+    color: black;
+}
+
+.blue {
+    background: royalblue;
+    color: white;
+}
+
+.green {
+    background: mediumseagreen;
+    color: black;
+}

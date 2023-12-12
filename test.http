@@ -1,0 +1,8 @@
+@origin = https://raspberry-pi-pico-wh-wifi.glitch.me
+
+POST {{origin}}/api
+content-type: application/json
+
+{
+  "color": "red"
+}

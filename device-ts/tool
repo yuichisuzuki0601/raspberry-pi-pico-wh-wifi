@@ -1,0 +1,8 @@
+#!/bin/sh
+cd `dirname $0`
+
+function s() { # ラズパイピコを開始します
+    yarn devs devtools src/main.ts --serial
+}
+
+. ../lib/shell/execute

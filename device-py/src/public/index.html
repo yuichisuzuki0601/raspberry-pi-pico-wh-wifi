@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Pico Wifi Setup</title>
+    </head>
+    <body>
+        <h2>Pico Wifi Setup</h2>
+        <div class="line">
+            <input id="ssid" placeholder="SSID" value="{SSID}">
+        </div>
+        <div class="line">
+            <input id="password" placeholder="PASSWORD" value="{PASSWORD}">
+        </div>
+        <div class="line">
+            <button id="clear">CLEAR</button>
+        </div>
+        <div class="line">
+            <button id="save" disabled>SAVE</button>
+        </div>
+    </body>
+    <script>
+        const getSsid = () => document.querySelector('#ssid').value;
+        const getPassword = () => document.querySelector('#password').value;
+        const setSsid = (value) => document.querySelector('#ssid').value = value;
+        const setPassword = (value) => document.querySelector('#password').value = value;
+
+        const toggleSaveButton = () => document.querySelector('#save').disabled = !getSsid() || !getPassword();
+
+        toggleSaveButton();
+
+        document.querySelector('#ssid').addEventListener('input', (e) => toggleSaveButton());
+        document.querySelector('#password').addEventListener('input', (e) => toggleSaveButton());
+
+        document.querySelector('#clear').addEventListener('click', (e) => {
+            setSsid('')
+            setPassword('');
+            toggleSaveButton();
+        });
+
+        document.querySelector('#save').addEventListener('click', (e) => {
+            location.href = `save?ssid=${getSsid()}&password=${getPassword()}`;
+        });
+    </script>
+</html>

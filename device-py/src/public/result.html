@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Result</title>
+    </head>
+    <body>
+        <h2>Result</h2>
+        <div class="line">
+            {SSID}
+        </div>
+        <div class="line">
+            {PASSWORD}
+        </div>
+        <div class="line">
+            <button id="back">BACK</button>
+        </div>
+    </body>
+    <script>
+        document.querySelector('#back').addEventListener('click', (e) => {
+            location.href = '/';
+        });
+    </script>
+</html>
