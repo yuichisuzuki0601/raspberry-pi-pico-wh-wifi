@@ -4,7 +4,7 @@
 
 ## 開発環境整備
 
--   vscode にて MicroPico 拡張機能をインストールする
+-   vscode にて MicroPico 拡張機能をインストールします
 
 # Raspberry Pi Pico WH 側の準備(MicroPython)
 
