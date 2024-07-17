@@ -6,10 +6,6 @@
         "reportMissingModuleSource": "none"
     },
     "micropico.openOnStart": true,
-    "python.analysis.typeshedPaths": [
-        ".vscode/Pico-W-Stub"
-    ],
-    "python.analysis.extraPaths": [
-        ".vscode/Pico-W-Stub"
-    ]
+    "python.analysis.typeshedPaths": ["~/.micropico-stubs/included"],
+    "python.analysis.extraPaths": ["~/.micropico-stubs/included"]
 }
