@@ -81,11 +81,11 @@
 
 # DeviceScriptを用いた開発
 
-[こちら](./dvice-ts/README-DEVICE-SCRIPT.md)
+[こちら](./dvice-ts/README.md)
 
 # MicroPythonを用いた開発
 
-[こちら](./dvice-py/README-MICRO-PYTHON.md)
+[こちら](./dvice-py/README.md)
 
 # それでは
 
