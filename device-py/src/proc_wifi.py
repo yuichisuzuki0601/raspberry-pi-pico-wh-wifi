@@ -6,7 +6,8 @@ from circuit_element.led import Led, LedPico, LedGroup
 from circuit_element.tact_switch import TactSwitch
 import config
 
-URL = 'http://raspberry-pi-pico-wh-wifi.glitch.me'
+#URL = 'http://192.168.0.10:3000'
+URL = 'https://raspberry-pi-pico-wh-wifi.glitch.me'
 
 def process():
 	led_pico = LedPico()
