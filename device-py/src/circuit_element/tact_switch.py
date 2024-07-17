@@ -6,7 +6,7 @@ from board.pin_layout import to_gpio_number
 class TactSwitch:
 	OFF = 0
 	ON = 1
-	BOUNCE_TIME_MS = 3000#[ms]#サーバーが国内ならもうちょっと短くても大丈夫そう
+	BOUNCE_TIME_MS = 5000#[ms]#サーバーが国内ならもうちょっと短くても大丈夫そう
 
 	def __init__(self, name, pinNumber):
 		self.lastInterruptTime = 0
