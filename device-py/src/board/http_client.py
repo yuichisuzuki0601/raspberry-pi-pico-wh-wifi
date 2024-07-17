@@ -1,5 +1,6 @@
 from ujson import dumps
 import urequests
+from board.timestamp import jstNow
 
 class HttpClient:
     TIMEOUT = 3#[s]
@@ -10,6 +11,7 @@ class HttpClient:
     def __noop(self, _): pass
 
     def post(self, path, body, on_success, on_error = __noop):
+        print(f'POST {self.base_url}/{path} {jstNow()}')
         try:
             response = urequests.post(
                 f'{self.base_url}/{path}',
