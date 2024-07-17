@@ -17,7 +17,7 @@
 
 ## Wifi アクセスポイントの設定
 
--   device-ts/src/main.ts の 9行目に書かれているaddNetworkの引数にSSIDとパスワードを入力します
+-   device-ts/src/main.ts の 9行目に書かれているaddNetworkの引数にSSIDとパスワードを入力します  
     (ただし、現在wifiに接続してもhttp通信ができない状態です)
 
 # Pico 起動(DeviceScript)
