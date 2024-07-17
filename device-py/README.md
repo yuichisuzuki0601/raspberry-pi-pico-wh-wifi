@@ -1,4 +1,4 @@
-[戻る](./README.md)
+[戻る](../README.md)
 
 # PC 側の準備(MicroPython)
 
@@ -10,20 +10,20 @@
 
 ## 初期設定
 
--   本体の BOOTSEL ボタンを押しながら、USB ケーブルで PC と接続する
+-   本体の BOOTSEL ボタンを押しながら、USB ケーブルで PC と接続します
 -   デスクトップに「RPI-RP2」というボリュームがマウントされる
--   [ここ](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#software-utilities)にアクセスし、「Resetting Flash Memory」からUF2ファイルをダウンロードする
--   ダウンロードしたファイルをデスクトップのボリュームにドロップすることで、Picoが初期化される
--   次に、[ここ](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#what-is-micropython)にアクセスし、「Raspberry Pi Pico W with Wi-Fi and Bluetooth LE support」からUF2ファイルをダウンロードする
--   これも同様に、デスクトップのボリュームにドロップすることで、MicroPythonを利用する準備が整う
+-   [ここ](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#software-utilities)にアクセスし、「Resetting Flash Memory」からUF2ファイルをダウンロードします
+-   ダウンロードしたファイルをデスクトップのボリュームにドロップすることで、Picoが初期化されます
+-   次に、[ここ](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#what-is-micropython)にアクセスし、「Raspberry Pi Pico W with Wi-Fi and Bluetooth LE support」からUF2ファイルをダウンロードします
+-   これも同様に、デスクトップのボリュームにドロップすることで、MicroPythonを利用する準備が整います
 
 ## ひとまず起動
 
--   Raspberry Pi Pico を USB ケーブルで PC と接続する
--   vscodeのフッターメニューに表示されている「Upload Project」を押す
--   device-py/src/.configファイルを開いた状態で、vscodeのフッターメニューに表示されている「Upload」を押す
--   device-py/src/main.pyファイルを開いた状態で、vscodeのフッターメニューに表示されている「Run」を押す
--   これでエラーは発生するが、一旦起動する
+-   Raspberry Pi Pico を USB ケーブルで PC と接続します
+-   vscodeのフッターメニューに表示されている「Upload Project」を押します
+-   device-py/src/.configファイルを開いた状態で、vscodeのフッターメニューに表示されている「Upload」を押します
+-   device-py/src/main.pyファイルを開いた状態で、vscodeのフッターメニューに表示されている「Run」を押します
+-   これでエラーは発生しますが、一旦起動します
 
 ## Wifi アクセスポイントの設定
 

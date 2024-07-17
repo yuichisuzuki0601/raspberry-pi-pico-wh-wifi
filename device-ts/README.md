@@ -1,4 +1,4 @@
-[戻る](./README.md)
+[戻る](../README.md)
 
 # PC 側の準備(DeviceScript)
 
