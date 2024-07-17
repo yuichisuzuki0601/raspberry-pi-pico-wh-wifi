@@ -1,6 +1,7 @@
 const express = require("express");
 const http = require("http");
 const socketIo = require("socket.io");
+const dayjs = require("dayjs");
 
 const app = express();
 const server = http.createServer(app);
@@ -10,8 +11,10 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+dayjs().utcOffset(9 * 60);
+
 app.post("/api", (req, res) => {
-    console.log(`api received:`, req.body, `\n`);
+    console.log(`api received:`, req.body, `${dayjs().format("YYYY-MM-DD HH:mm:ss.SSS Z")} JST`);
     io.emit("color", JSON.stringify(req.body));
     res.end("success");
 });
